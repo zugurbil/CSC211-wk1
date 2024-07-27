@@ -1,0 +1,15 @@
+public class StaticMethodExample {
+
+    // Static method that calculates and prints the square of a number
+    public static void printSquare(int number) {
+        int square = number * number;
+        System.out.println("The square of " + number + " is " + square);
+    }
+
+    public static void main(String[] args) {
+        // Using a for loop to call the static method
+        for (int i = 1; i <= 5; i++) {
+            printSquare(i); // Calling the static method
+        }
+    }
+}
