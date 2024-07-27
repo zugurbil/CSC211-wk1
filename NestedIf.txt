@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class AgeCategory {
+    public static void main(String[] args) {
+        // Create a Scanner object to read input
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt the user to enter their age
+        System.out.print("Enter your age: ");
+        int age = scanner.nextInt();
+
+        // Determine the age category using nested if statements
+        if (age >= 0) { // Check for non-negative age
+            if (age < 13) {
+                System.out.println("You are a child.");
+            } else if (age < 18) {
+                System.out.println("You are a teenager.");
+            } else if (age < 65) {
+                System.out.println("You are an adult.");
+            } else {
+                System.out.println("You are a senior.");
+            }

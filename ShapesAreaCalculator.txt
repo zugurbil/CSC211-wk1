@@ -1,0 +1,48 @@
+
+import java.util.Scanner;
+
+public class AreaCalculator {
+    
+    // Static method to calculate the area of a circle
+    public static double calculateCircleArea(double radius) {
+        return Math.PI * radius * radius;
+    }
+
+    // Static method to calculate the area of a rectangle
+    public static double calculateRectangleArea(double length, double width) {
+        return length * width;
+    }
+
+    // Static method to calculate the area of a triangle
+    public static double calculateTriangleArea(double base, double height) {
+        return 0.5 * base * height;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Calculate and print the area of a circle
+        System.out.print("Enter the radius of the circle: ");
+        double radius = scanner.nextDouble();
+        double circleArea = calculateCircleArea(radius);
+        System.out.println("The area of the circle is: " + circleArea);
+
+        // Calculate and print the area of a rectangle
+        System.out.print("Enter the length of the rectangle: ");
+        double length = scanner.nextDouble();
+        System.out.print("Enter the width of the rectangle: ");
+        double width = scanner.nextDouble();
+        double rectangleArea = calculateRectangleArea(length, width);
+        System.out.println("The area of the rectangle is: " + rectangleArea);
+
+        // Calculate and print the area of a triangle
+        System.out.print("Enter the base of the triangle: ");
+        double base = scanner.nextDouble();
+        System.out.print("Enter the height of the triangle: ");
+        double height = scanner.nextDouble();
+        double triangleArea = calculateTriangleArea(base, height);
+        System.out.println("The area of the triangle is: " + triangleArea);
+
+        scanner.close();
+    }
+}
