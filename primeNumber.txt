@@ -1,0 +1,23 @@
+public class PrimeFinder {
+
+    // Static method to check if a number is prime
+    public static boolean isPrime(int number) {
+        if (number <= 1) {
+            return false;
+        }
+        for (int i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    // Static method to find and print all prime numbers between 50 and 100
+    public static void findPrimesBetween50And100() {
+        System.out.println("Prime numbers between 50 and 100 are:");
+        for (int i = 50; i <= 100; i++) {
+            if (isPrime(i)) {
+                System.out.print(i + " ");
+            }
+        }
