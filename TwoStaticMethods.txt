@@ -1,0 +1,22 @@
+public class StaticMethodsExample {
+
+    // Static method 1
+    public static void methodOne() {
+        int localVar = 10;  // Local variable named 'localVar'
+        localVar *= 2;
+        System.out.println("Value of localVar in methodOne: " + localVar);
+    }
+
+    // Static method 2
+    public static void methodTwo() {
+        int localVar = 20;  // Local variable named 'localVar'
+        localVar += 5;
+        System.out.println("Value of localVar in methodTwo: " + localVar);
+    }
+
+    // Main method to run the program
+    public static void main(String[] args) {
+        methodOne();  // Call the first static method
+        methodTwo();  // Call the second static method
+    }
+}
